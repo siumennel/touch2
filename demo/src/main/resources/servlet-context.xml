@@ -9,6 +9,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<context:property-placeholder
 		location="classpath:*.properties" />
 	<context:component-scan
-		base-package="com.company.base.spring.MyPostProcessor" />
+		base-package="com.example.demo.MyPostProcessor" />
 
 </beans>
