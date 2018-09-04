@@ -3,7 +3,6 @@ package com.example.demo;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.apache.tomcat.util.http.parser.Cookie;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloWorldController {
-	@RequestMapping(value = "/{param}")
+	@RequestMapping(value = "/hello/{param}")
 	public String sayHello(@PathVariable String param, HttpServletRequest request, HttpSession session) {
 		System.out.println("param=" + param);
 
