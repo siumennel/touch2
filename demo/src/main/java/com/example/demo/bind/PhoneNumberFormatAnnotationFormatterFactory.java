@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.bind;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,6 +6,8 @@ import java.util.Set;
 import org.springframework.format.AnnotationFormatterFactory;
 import org.springframework.format.Parser;
 import org.springframework.format.Printer;
+
+import com.example.demo.model.PhoneNumberModel;
 
 public class PhoneNumberFormatAnnotationFormatterFactory implements AnnotationFormatterFactory<PhoneNumber> {// ①指定可以解析/格式化的字段注解类型
 

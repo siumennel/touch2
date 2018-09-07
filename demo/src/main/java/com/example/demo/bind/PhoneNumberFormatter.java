@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.bind;
 
 import java.text.ParseException;
 import java.util.Locale;
@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 
 import org.springframework.format.Formatter;
 import org.springframework.util.StringUtils;
+
+import com.example.demo.model.PhoneNumberModel;
 
 public class PhoneNumberFormatter implements Formatter<PhoneNumberModel> {
 	Pattern pattern = Pattern.compile("^(\\d{3,4})-(\\d{7,8})$");
